@@ -1,2 +1,2 @@
-# ecommerce
+# Ecommerce
 Internship final Project
