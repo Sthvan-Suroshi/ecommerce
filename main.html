@@ -7,6 +7,8 @@
     <title>Style-It</title>
     <link rel="stylesheet" href="main.css" />
     <script src="https://kit.fontawesome.com/b5c2a5b5f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
@@ -20,20 +22,33 @@
 
   <body>
     <section id="navbar-container">
-      <div class="logo">Style-It</div>
+      <a class="logo">STYLED<span>.com</span></a>
       <div class="nav-list">
-        <ul>
+        <ul id="navbar">
+          <li id="HideOnMobile"><a href="">Home</a></li>
+          <li id="HideOnMobile"><a href="">Products</a></li>
+          <li id="HideOnMobile"><a href="">About</a></li>
+          <li id="HideOnMobile"><a href="">Contact</a></li>
+          <li id="HideOnMobile"><a href="">Account</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+          <li id="HideOnDesk" onclick=op()><i class="fa-solid fa-bars"></i></li>
+        </ul>
+      </div>
+    </section>
+
+      <div id="sidebar">
+        <ul id="mob-navbar">
+          <li onclick=cl()><i class="fa-solid fa-xmark"></i></li>
           <li><a href="">Home</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
           <li><a href="">Account</a></li>
-          <li>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i> </a>
-          </li>
         </ul>
       </div>
-    </section>
+    
 
     <section id="hero">
       <div class="offer">
@@ -250,14 +265,81 @@
     </section>
 
     <section id="news-letter">
-      <div class="new-text">
+      <div class="news-text">
         <h4>Sign-Up for News Letter</h4>
-        <p>Get Email updates about lattest styles and <span>special offers</span> </p>
+        <p>Get Email updates about latest styles and <span>special offers.</span> </p>
       </div>
       <div class="form">
-        <input type="text" name="" id="" placeholder="Your Email Address">
-        <button type="submit">Sign-Up</button>
+        <form action="">
+          <input type="text" name="" id="" placeholder="Your Email Address">
+          <button type="submit">Sign-Up</button>
+        </form>
       </div>
     </section>
+
+    <section id="footer">
+      <div class="cont3">
+        <center>
+          <h1>Contact Styled.</h1>
+        </center>
+        <footer class="section-p1">
+          <div class="col">
+
+            <h4>Contact</h4>
+            <p><strong>Adress:</strong> 591108 Belgaum, India.</p>
+            <p><strong>Phone:</strong> 10:00-22:00,Monday-Saturday.</p>
+            <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+
+          <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+
+          <div class="col-install">
+            <h4>Install App </h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+              <img src="images/G-play.png" alt="" width="100px" style="margin-bottom: 18px;">
+              <img src="images/app-store-badge.png" alt="" width="80px">
+            </div>
+            <div class="row2">
+              <p>Secured Payment Gateways</p>
+              <img src="images/gateway1.png" alt="" width="200px">
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </section>
+    <div class="copyright">
+      &copy; 2023 Designed By <a href="https://github.com/Sthvan-Suroshi">Sthvan-Suroshi</a>
+    </div>
   </body>
+  <script src="main.js"></script>
+
 </html>
