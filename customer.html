@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style-It</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://kit.fontawesome.com/b5c2a5b5f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <section id="navbar-container">
+      <a class="logo">STYLED<span>.com</span></a>
+      <div class="nav-list">
+        <ul id="navbar">
+          <li id="HideOnMobile"><a href="main.html">Home</a></li>
+          <li id="HideOnMobile"><a href="product.html">Products</a></li>
+          <!-- <li id="HideOnMobile"><a href="">About</a></li> -->
+          <li id="HideOnMobile"><a href="">Customer Support</a></li>
+          <li id="HideOnMobile"><a href="">Login/Sign-Up</a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+          <li id="HideOnDesk" onclick="op()">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="sidebar">
+      <ul id="mob-navbar">
+        <li onclick="cl()"><i class="fa-solid fa-xmark"></i></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <!-- <li><a href="">About</a></li> -->
+        <li><a href="">Customer Support</a></li>
+        <li><a href="">Login/Sign-Up</a></li>
+      </ul>
+    </div>
+    <section id="contact">
+      <div id="customer">
+        <a class="logo">STYLED<span>.com</span></a>
+        <h3>We Are Here To Hear Your queries</h3>
+      </div>
+      <div class="det-map">
+        <div class="detail">
+          <p>GET IN TOUCH</p>
+          <h1>Visit one of our agency or contact us today</h1>
+          <h3>Head Office</h3>
+          <div>
+            <ul>
+              <li><i class="fa-regular fa-map"></i> 591108 Belgaum, India.</li>
+              <li><i class="fa-regular fa-envelope"></i> contact@example.com</li>
+              <li><i class="fa-solid fa-phone"></i> +91-191841618.</li>
+              <li><i class="fa-regular fa-clock"></i> 10:00-22:00,Monday-Saturday.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8101924.742218735!2d-115.16068045559037!3d33.511748726758164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2sArizona%2C%20USA!5e0!3m2!1sen!2sin!4v1700935381210!5m2!1sen!2sin"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="form">
+      <form action="" class="msg">
+        <p>Leave A Message</p>
+        <h2>We love to hear from you</h2>
+        <input type="text" name="" id="" placeholder="YOUR NAME"><br>
+        <input type="email" name="" id="" placeholder="EMAIL ADDRESS"><br>
+        <input type="text" name="" id="" placeholder="SUBJECT"><br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea><br>
+        <button type="submit">SUBMIT</button>
+
+      </form>
+      <div class="people">
+        <div class="p1">
+          <img src="images/p1.png" alt="" srcset="">
+          <div class="des">
+            <p><b>John Doe</b></p>
+            <p>Manager</p>
+            <p>Phone:+91 4844464844</p>
+          </div>
+        </div>
+        <div class="p1"><img src="images/p2.png" alt="" srcset="">
+          <div class="des">
+            <p><b>John Doe</b></p>
+            <p>Manager</p>
+            <p>Phone:+91 4844464844</p>
+          </div>
+        </div>
+        <div class="p1">
+          <img src="images/p3.png" alt="" srcset="">
+          <div class="des">
+            <p><b>John Doe</b></p>
+            <p>Manager</p>
+            <p>Phone:+91 4844464844</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="cont3">
+        <center>
+          <h1>Contact Styled.</h1>
+        </center>
+        <footer class="section-p1">
+          <div class="col">
+
+            <h4>Contact</h4>
+            <p><strong>Adress:</strong> 591108 Belgaum, India.</p>
+            <p><strong>Phone:</strong> 10:00-22:00,Monday-Saturday.</p>
+            <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+
+          <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+
+          <div class="col-install">
+            <h4>Install App </h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+              <img src="images/G-play.png" alt="" width="100px" style="margin-bottom: 18px;">
+              <img src="images/app-store-badge.png" alt="" width="80px">
+            </div>
+            <div class="row2">
+              <p>Secured Payment Gateways</p>
+              <img src="images/gateway1.png" alt="" width="200px">
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </section>
+
+    <section id="mob-footer">
+      <h1>Contact Styled</h1>
+      <div class="mob-footer-cnt">
+        <div class="m-col1">
+          <h4>Contact</h4>
+          <p><b>Adress:</b> 591108 Belgaum, India.</p>
+          <p><b>Phone:</b> 10:00-22:00,Monday-Saturday.</p>
+
+        </div>
+        <div class="m-col2">
+          <h4>About</h4>
+          <p>About Us</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="m-col3">
+          <h4>Follow Me</h4>
+          <a href="https://github.com/Sthvan-Suroshi" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      &copy; 2023 Designed By <a href="https://github.com/Sthvan-Suroshi">Sthvan-Suroshi</a>
+    </div>
+  </body>
+  <script src="main.js"></script>
+
+</html>
+
+</html>
