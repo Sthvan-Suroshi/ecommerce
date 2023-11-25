@@ -9,7 +9,7 @@
 }
 
 * {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", sans-serif;
@@ -237,6 +237,7 @@ p {
   text-decoration: line-through;
 }
 
+
 .arr-disc {
   font-size: 1.1rem;
   margin-bottom: 15px;
@@ -248,6 +249,9 @@ p {
   justify-content: space-evenly;
   box-sizing: border-box;
   flex-wrap: wrap;
+}
+.price{
+  display: inline;
 }
 
 #new-arr {
@@ -516,6 +520,72 @@ footer h4 {
   display: none;
 }
 
+#mob-footer {
+  display: none;
+  padding: 2% 8%;
+}
+.mob-footer-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#mob-footer h1 {
+  text-align: center;
+}
+#mob-footer h4 {
+  font-size: 1.2rem;
+  color: var(--umber);
+}
+
+.m-col1,
+.m-col2 {
+  margin-bottom: 20px;
+}
+
+/* <-------------------------------------------Products CSS-------------------------------------> */
+.shop-container{
+  padding: 2% 8%;
+}
+#cart-icn{
+  float: right;
+  margin-right:20px ;
+  /* background-color: bisque; */
+  font-size: 1.2rem;
+}
+
+/* <-------------------------------------------Page navigator-------------------------------------> */
+#page-nav{
+  padding: 2% 8%;
+  place-content: left;
+  display: flex;
+  gap: 10px;
+  background-color: var(--antiflash-white);
+  box-sizing: border-box;
+
+}
+.pg-num{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--umber);
+  color: var(--platinum);
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.3s ;
+}
+.pg-num:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+
+
+/* <-------------------------------------------Responsive CSS-------------------------------------> */
+
 @media (max-width: 799px) {
   #HideOnMobile {
     display: none;
@@ -565,12 +635,28 @@ footer h4 {
     background-color: var(--eerie-black);
     color: var(--antiflash-white);
   }
-  #footer{
+  #footer {
     display: none;
+  }
+
+  #mob-footer {
+    display: block;
   }
 }
 
 @media (max-width: 420px) {
+  #hero {
+    background-image: url("images/bg5.jpg");
+    background-position: 35% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
   #HideOnMobile {
     display: none;
   }
@@ -627,7 +713,7 @@ footer h4 {
   .arr-disc h1 {
     font-size: 2.2rem;
   }
-  #footer{
+  #footer {
     display: none;
   }
 }
