@@ -478,6 +478,9 @@ footer h4 {
   text-align: center;
   color: var(--platinum);
   height: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .copyright a {
@@ -522,7 +525,7 @@ footer h4 {
 
 #mob-footer {
   display: none;
-  padding: 2% 8%;
+  padding: 2% 8%; 
 }
 .mob-footer-cnt {
   display: flex;
@@ -535,13 +538,14 @@ footer h4 {
   text-align: center;
 }
 #mob-footer h4 {
+  margin-bottom: 5px;
   font-size: 1.2rem;
   color: var(--umber);
 }
 
 .m-col1,
-.m-col2 {
-  margin-bottom: 20px;
+.m-col2 ,.m-col3{
+  margin-bottom: 25px;
 }
 
 /* <-------------------------------------------Products CSS-------------------------------------> */
@@ -602,11 +606,29 @@ footer h4 {
 }
 .det-map {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   padding: 2% 8%;
   text-wrap: stable;
+  box-sizing: border-box;
 }
+
+.map {
+  width: 55%;
+  height: 310px;
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+.detail {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
 .detail li {
   list-style: none;
   display: flex;
@@ -620,9 +642,14 @@ footer h4 {
 .detail h3 {
   margin-bottom: 10px;
 }
-
 #form {
+  display: flex;
+  justify-content: space-between;
   padding: 2% 8%;
+}
+.msg {
+  width: 50%;
+  margin-right: 10px;
 }
 .msg p,
 .msg h2 {
@@ -630,14 +657,15 @@ footer h4 {
 }
 .msg input {
   box-sizing: border-box;
-  width: 30rem;
+  width: 100%;
   height: 2rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  transition: 0.3s;
 }
 .msg textarea {
   box-sizing: border-box;
-  width: 30rem;
+  width: 100%;
   /*height: 2rem; */
   padding: 1rem;
   margin-bottom: 1rem;
@@ -648,11 +676,10 @@ footer h4 {
   background-color: var(--black-olive);
   color: var(--antiflash-white);
 }
-#form{
-  display: flex;
-  justify-content: space-between;
+.people {
+  margin-bottom: 20px;
 }
-.p1{
+.p1 {
   box-sizing: border-box;
   display: flex;
   gap: 1rem;
@@ -663,8 +690,83 @@ footer h4 {
   padding: 0.5rem;
   background-color: white;
 }
-.des p{
+.p1 img {
+  width: 90px;
+  height: 90px;
+}
+.des p {
   margin: 0.5rem 0;
+}
+.msg input:focus {
+  border-bottom: 5px solid var(--black-olive);
+}
+
+/* <-------------------------------------------Login CSS-------------------------------------> */
+#login {
+  display: block;
+  width: 400px;
+}
+#login h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#login-pg {
+  /* flex-direction: column;
+  box-sizing: border-box; */
+  display: flex;
+  place-content: center;
+  padding: 2% 8%;
+  margin-bottom: 30px;
+}
+#login label {
+  font-size: 1.3rem;
+}
+#login input {
+  width: 99%;
+  font-size: 1rem;
+  height: 2rem;
+  /* border-radius: 1px; */
+  margin-bottom: 10px;
+}
+#login button {
+  font-size: 1rem;
+  width: 100%;
+  height: 32px;
+  background-color: var(--eerie-black);
+  color: var(--antiflash-white);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#login span {
+  cursor: pointer;
+}
+#registration h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#registration label {
+  font-size: 1.3rem;
+}
+#registration input {
+  width: 99%;
+  font-size: 1rem;
+  height: 2rem;
+  /* border-radius: 1px; */
+  margin-bottom: 10px;
+}
+#registration button {
+  font-size: 1rem;
+  width: 100%;
+  height: 32px;
+  background-color: var(--eerie-black);
+  color: var(--antiflash-white);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#registration {
+  display: none;
+  width: 400px;
 }
 /* <-------------------------------------------Responsive CSS-------------------------------------> */
 
@@ -722,7 +824,87 @@ footer h4 {
   }
 
   #mob-footer {
+    /* height: 100%; */
     display: block;
+  }
+}
+@media (max-width: 650px) {
+  #HideOnMobile {
+    display: none;
+  }
+
+  #HideOnDesk {
+    display: block;
+  }
+
+  #navbar {
+    display: flex;
+  }
+
+  .pr {
+    height: 300px;
+    width: 260px;
+  }
+
+  .of-detail h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .of-detail h1 span {
+    font-size: 1.8rem;
+  }
+
+  .of-detail h2 {
+    margin-bottom: 10px;
+  }
+
+  #offer-banner {
+    height: 35vh;
+    place-content: center;
+  }
+
+  .form input {
+    width: 200px;
+    height: 30px;
+    /* display: flex; */
+    /* text-align: center; */
+  }
+
+  .form button {
+    width: 80px;
+    height: 32px;
+    background-color: var(--eerie-black);
+    color: var(--antiflash-white);
+  }
+  #footer {
+    display: none;
+  }
+
+  #mob-footer {
+    display: block;
+  }
+
+  .det-map {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 2% 8%;
+    text-wrap: stable;
+    box-sizing: border-box;
+  }
+  .map {
+    width: 100%;
+    /* height: 310px; */
+    /* box-sizing: border-box; */
+  }
+  #form {
+    flex-direction: column-reverse;
+  }
+  .msg {
+    width: 100%;
+    margin-right: 10px;
   }
 }
 
