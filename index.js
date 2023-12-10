@@ -64,7 +64,32 @@ function welcomefun() {
   var welcome = documment.getElementById("welcome");
   welcome.innerHTML = "Welcome" + sessionStorage.getItem("storedname") + "!";
 }
-function cart()
-{
-    alert("Cart section will be available soon");
+function cart() {
+  alert("Cart section will be available soon");
 }
+let style = document.querySelector(".style");
+style.style.display = "none";
+
+let test = document.querySelector(".test");
+
+test.addEventListener("mousemove", function (details) {
+  style.style.display = "block";
+  let cur = details.clientX;
+
+  let pos = gsap.utils.mapRange(
+    0,
+    window.innerWidth,
+    50,
+    window.innerWidth - 50,
+    cur
+  );
+
+  gsap.to(".style", {
+    left: pos + "px",
+    ease: Power3,
+    top: details.clientY + "px",
+  });
+});
+test.addEventListener("mouseout", function (details) {
+  style.style.display = "none";
+});
