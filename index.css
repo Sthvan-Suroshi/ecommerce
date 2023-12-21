@@ -47,6 +47,7 @@
   transform: scale(0, 1);
   z-index: 9;
 }
+
 #navbar li a:hover::after {
   transform: scale(1.1, 1.1);
 }
@@ -66,6 +67,7 @@
   color: var(--eerie-black);
   text-decoration: none;
 }
+
 .logo:hover {
   transform: scale(1.1, 1.1);
   color: var(--umber);
@@ -88,6 +90,7 @@
   align-items: center;
   box-sizing: border-box;
 }
+
 .style {
   position: absolute;
   top: 50%;
@@ -96,46 +99,59 @@
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
+
 .test {
   overflow: hidden;
   position: relative;
 }
+
 .run-offer {
+  /* display: flex; */
   width: 100%;
+  background-color: var(--antiflash-white);
   position: absolute;
-  animation-name: run;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: backwards;
-  animation-timing-function: linear;
-  /* animation-direction: alternate; */
-  display: flex;
-  /* height: 10px; */
-  /* overflow: hidden; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
+
+.run-offer::-webkit-scrollbar {
+  display: none;
+}
+
 .run-offer h1 {
   user-select: none;
-  /* display: inline-block; */
-  /* overflow: auto; */
-  white-space: nowrap;
-  margin-right: 5rem;
-  font-size: 1.3rem;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  animation-name: run;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: backwards; */
+  animation-timing-function: linear;
+  width: 40%;
   margin-left: 5rem;
+  animation-direction: alternate;
+  /* overflow-x:visible; */
+  /* height: 10px;
+  /* overflow: auto; */
 }
 
 .stroke {
   color: transparent;
+  margin-right: 5rem;
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: red;
 }
 
 @keyframes run {
   from {
-    transform: translateX(-100%);
+    transform: translateX(0%);
     /* left: -100%; */
   }
+
   to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     /* left: 100%; */
   }
 }
@@ -332,6 +348,7 @@ p {
   box-sizing: border-box;
   flex-wrap: wrap;
 }
+
 .price {
   display: inline;
 }
@@ -607,6 +624,7 @@ footer h4 {
   display: none;
   padding: 2% 8%;
 }
+
 .mob-footer-cnt {
   display: flex;
   flex-wrap: wrap;
@@ -617,6 +635,7 @@ footer h4 {
 #mob-footer h1 {
   text-align: center;
 }
+
 #mob-footer h4 {
   margin-bottom: 5px;
   font-size: 1.2rem;
@@ -633,6 +652,7 @@ footer h4 {
 .shop-container {
   padding: 2% 8%;
 }
+
 #cart-icn {
   border-radius: 50%;
   text-align: center;
@@ -644,12 +664,14 @@ footer h4 {
   background-color: var(--timberwolf);
   font-size: 1.2rem;
 }
+
 #cart-icn:hover {
   background-color: rgba(241, 208, 165, 0.996);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 }
+
 /* <-------------------------------------------Page navigator-------------------------------------> */
 #page-nav {
   justify-content: center;
@@ -660,6 +682,7 @@ footer h4 {
   background-color: var(--antiflash-white);
   box-sizing: border-box;
 }
+
 .pg-num {
   box-sizing: border-box;
   display: flex;
@@ -672,10 +695,12 @@ footer h4 {
   border-radius: 5px;
   transition: 0.3s;
 }
+
 .pg-num:hover {
   cursor: pointer;
   filter: brightness(120%);
 }
+
 /* <-------------------------------------------Customer CSS-------------------------------------> */
 
 #customer {
@@ -689,13 +714,16 @@ footer h4 {
   align-items: center;
   flex-direction: column;
 }
+
 #customer .logo {
   color: var(--platinum);
 }
+
 #customer h3 {
   color: var(--timberwolf);
   font-weight: 100;
 }
+
 .det-map {
   display: flex;
   /* flex-wrap: wrap; */
@@ -712,10 +740,12 @@ footer h4 {
 
   box-sizing: border-box;
 }
+
 .map iframe {
   width: 100%;
   height: 100%;
 }
+
 .detail {
   margin-right: 10px;
   margin-bottom: 20px;
@@ -729,24 +759,29 @@ footer h4 {
   justify-content: left;
   margin: 30px 0;
 }
+
 .detail p,
 .detail h1,
 .detail h3 {
   margin-bottom: 10px;
 }
+
 #form {
   display: flex;
   justify-content: space-between;
   padding: 2% 8%;
 }
+
 .msg {
   width: 50%;
   margin-right: 10px;
 }
+
 .msg p,
 .msg h2 {
   margin-bottom: 1rem;
 }
+
 .msg input {
   box-sizing: border-box;
   width: 100%;
@@ -755,6 +790,7 @@ footer h4 {
   margin-bottom: 1rem;
   transition: 0.3s;
 }
+
 .msg textarea {
   box-sizing: border-box;
   width: 100%;
@@ -762,15 +798,18 @@ footer h4 {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 .msg button {
   width: 80px;
   height: 32px;
   background-color: var(--black-olive);
   color: var(--antiflash-white);
 }
+
 .people {
   margin-bottom: 20px;
 }
+
 .p1 {
   box-sizing: border-box;
   display: flex;
@@ -783,18 +822,22 @@ footer h4 {
   transition: 0.3s ease-in-out;
   background-color: white;
 }
+
 .p1:hover {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   transform: translateY(-3px);
 }
+
 .p1 img {
   width: 90px;
   height: 90px;
 }
+
 .des p {
   margin: 0.5rem 0;
 }
+
 .msg input:focus {
   border-bottom: 5px solid var(--black-olive);
 }
@@ -804,10 +847,12 @@ footer h4 {
   display: block;
   width: 400px;
 }
+
 #login h1 {
   margin-bottom: 10px;
   text-align: center;
 }
+
 #login-pg {
   /* flex-direction: column;
   box-sizing: border-box; */
@@ -816,12 +861,15 @@ footer h4 {
   padding: 2% 8%;
   margin-bottom: 30px;
 }
+
 #login-pg input:focus {
   border-bottom: 5px solid var(--black-olive);
 }
+
 #login label {
   font-size: 1.3rem;
 }
+
 #login input {
   width: 99%;
   font-size: 1rem;
@@ -831,6 +879,7 @@ footer h4 {
   transition: 0.3s ease-in-out;
   box-sizing: border-box;
 }
+
 #login button {
   font-size: 1rem;
   width: 100%;
@@ -841,12 +890,15 @@ footer h4 {
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
+
 #login button:hover {
   filter: brightness(120%);
 }
+
 #login span {
   cursor: pointer;
 }
+
 #registration h1 {
   margin-bottom: 10px;
   text-align: center;
@@ -855,6 +907,7 @@ footer h4 {
 #registration label {
   font-size: 1.3rem;
 }
+
 #registration input {
   width: 99%;
   font-size: 1rem;
@@ -862,6 +915,7 @@ footer h4 {
   /* border-radius: 1px; */
   margin-bottom: 10px;
 }
+
 #registration button {
   font-size: 1rem;
   width: 100%;
@@ -872,13 +926,16 @@ footer h4 {
   border-radius: 5px;
   transition: 0.4s ease-in-out;
 }
+
 #registration button:hover {
   filter: brightness(120%);
 }
+
 #registration {
   display: none;
   width: 400px;
 }
+
 /* <-------------------------------------------Responsive CSS-------------------------------------> */
 
 @media (max-width: 799px) {
@@ -893,7 +950,9 @@ footer h4 {
   #navbar {
     display: flex;
   }
-
+  .run-offer {
+    display: none;
+  }
   .pr {
     height: 300px;
     width: 260px;
@@ -930,6 +989,7 @@ footer h4 {
     background-color: var(--eerie-black);
     color: var(--antiflash-white);
   }
+
   #footer {
     display: none;
   }
@@ -939,6 +999,7 @@ footer h4 {
     display: block;
   }
 }
+
 @media (max-width: 650px) {
   #HideOnMobile {
     display: none;
@@ -988,6 +1049,7 @@ footer h4 {
     background-color: var(--eerie-black);
     color: var(--antiflash-white);
   }
+
   #footer {
     display: none;
   }
@@ -1005,18 +1067,22 @@ footer h4 {
     text-wrap: stable;
     box-sizing: border-box;
   }
+
   .map {
     width: 100%;
     /* height: 310px; */
     /* box-sizing: border-box; */
   }
+
   #form {
     flex-direction: column-reverse;
   }
+
   .msg {
     width: 100%;
     margin-right: 10px;
   }
+
   .prd {
     padding: 10px;
   }
@@ -1091,6 +1157,7 @@ footer h4 {
   .arr-disc h1 {
     font-size: 2.2rem;
   }
+
   #footer {
     display: none;
   }
