@@ -109,17 +109,18 @@
   animation-fill-mode: backwards;
   animation-timing-function: linear;
   /* animation-direction: alternate; */
+  display: flex;
   /* height: 10px; */
   /* overflow: hidden; */
 }
 .run-offer h1 {
   user-select: none;
-  display: flex;
+  /* display: inline-block; */
   /* overflow: auto; */
   white-space: nowrap;
   margin-right: 5rem;
   font-size: 1.3rem;
-  /* margin-left: 5rem; */
+  margin-left: 5rem;
 }
 
 .stroke {
