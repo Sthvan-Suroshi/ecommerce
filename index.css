@@ -95,8 +95,50 @@
   font-size: 20px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
-
 }
+.test {
+  overflow: hidden;
+  position: relative;
+}
+.run-offer {
+  width: 100%;
+  position: absolute;
+  animation-name: run;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  /* height: 10px; */
+  /* overflow: hidden; */
+}
+.run-offer h1 {
+  user-select: none;
+  display: flex;
+  /* overflow: auto; */
+  white-space: nowrap;
+  margin-right: 5rem;
+  font-size: 1.3rem;
+  /* margin-left: 5rem; */
+}
+
+.stroke {
+  color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: red;
+}
+
+@keyframes run {
+  from {
+    transform: translateX(-100%);
+    /* left: -100%; */
+  }
+  to {
+    transform: translateX(100%);
+    /* left: 100%; */
+  }
+}
+
 .offer {
   padding-left: 8%;
 }
