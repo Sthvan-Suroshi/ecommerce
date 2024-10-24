@@ -72,24 +72,24 @@ style.style.display = "none";
 
 let test = document.querySelector(".test");
 
-test.addEventListener("mousemove", function (details) {
-  style.style.display = "block";
-  let cur = details.clientX;
+// test.addEventListener("mousemove", function (details) {
+//   style.style.display = "block";
+//   let cur = details.clientX;
 
-  let pos = gsap.utils.mapRange(
-    0,
-    window.innerWidth,
-    50,
-    window.innerWidth - 50,
-    cur
-  );
+//   let pos = gsap.utils.mapRange(
+//     0,
+//     window.innerWidth,
+//     50,
+//     window.innerWidth - 50,
+//     cur
+//   );
 
-  gsap.to(".style", {
-    left: pos + "px",
-    ease: Power3,
-    top: details.clientY + "px",
-  });
-});
-test.addEventListener("mouseout", function (details) {
-  style.style.display = "none";
-});
+//   gsap.to(".style", {
+//     left: pos + "px",
+//     ease: Power3,
+//     top: details.clientY + "px",
+//   });
+// });
+// test.addEventListener("mouseout", function (details) {
+//   style.style.display = "none";
+// });
